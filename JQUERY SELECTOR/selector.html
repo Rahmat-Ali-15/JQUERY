@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector in jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>Hello jQuery</p>
+    <p class="p1">jQuery Selector</p>
+    <button type="button" id="btn">Click me</button>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#btn").click(function(){ // selcting by id name
+                $("p").css("color","red"); // selecting by tag name
+                $(".p1").css("color","blue"); // selecting by class name
+            });
+
+        });
+    </script>
+</body>
+</html>
