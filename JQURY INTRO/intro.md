@@ -118,4 +118,20 @@ If we don't want to download and host jQuery ourself, we can include it from a C
 * Both Google and Microsoft host jQuery
 * To use jQuery from Google or Microsoft, use one of the following:
     * Google CDN
-    * <head> <sctipt src="https://ajax.googleapis.com/ajax//libs/jquery/3.4.1/jquery.min.js"> </script></head>
+    * `<head> <sctipt src="https://ajax.googleapis.com/ajax//libs/jquery/3.4.1/jquery.min.js"></script> </head>`
+
+
+# Syntax of jQuery
+* Basic Syntax : **$(selector).action()** 
+* A $ sign to define / access jQuery
+* A selector to find HTML elements
+* A jQuery action() to be performed on the elements
+
+# Selectors in jQuery
+* **Basic selectors**
+    * **Selection by Id**
+        * $("#IdName")
+    * **Selection by Class**
+        * $(".ClassName")
+    * **Selection by Tag**
+        * $("TagName")
