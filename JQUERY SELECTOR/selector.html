@@ -7,17 +7,40 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <p>Hello jQuery</p>
+    <h1>Hello jQuery</h1>
+    <p>Paragraph</p>
     <p class="p1">jQuery Selector</p>
+
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Help</li>
+    </ul>
+
+    <p class="para1">Para 1</p>
+    <p class="para2">Para 2</p>
+
     <button type="button" id="btn">Click me</button>
 
     <script>
         $(document).ready(function(){
 
             $("#btn").click(function(){ // selcting by id name
+
                 $("p").css("color","red"); // selecting by tag name
+                
                 $(".p1").css("color","blue"); // selecting by class name
+
+                $("*").css("font-family","cooper") // universal selector
+
+                $("ul li").css("color", "red"); // selecting list items
+
+                $(".para1 , .para2").css("color", "gray"); // selecting multiple classes
+
             });
+
+            
 
         });
     </script>
