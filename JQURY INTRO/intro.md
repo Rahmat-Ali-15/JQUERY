@@ -51,3 +51,71 @@
 * HTML event methods
 * Effects and animations
 * AJAX
+
+## Benefits of jQuery over JS
+* **Unobtrusive**
+    * Web page designing through unobtrusive JS
+    * Separates functionality between presentation and structure of web page
+
+* **Lightweight**
+    * Reduced library size is in kilobytes(KB)
+    * Browser cache the libary throughout websites instead of downloading it.
+
+* **Easy to use**
+    * Simple and robust syntax
+    * Reduced lines of codes
+    * Library uses CSS3 selector specification
+
+* **Big and focused library**
+    * Perform variety of functions through single library
+    * jQuery offers several utility functions
+
+* **Extensibility**
+    * Plugin framework third party and official plugins
+    * Any feature can be included through plugins
+
+* **Browser Compatibility**
+    * Resolves cross browser issues
+    * jQuery implemented compatibility code
+
+* **Strong Community**
+    * Exclusive community where developers improve functionality
+    * Offers several plugins which accelerate web development process strong community
+
+* **AJAX Support**
+    * Creates AJAX templates
+    * Offers smooth interfaces and efficient loading AJAX support
+
+* **Comprehensive Documentation**
+    * Official website has in-depth documentation and tutorials
+    * Helps beginners for easy use
+
+## Why jQuery?
+* There are lots of other javascript libraries out there, but jQuery is probably the most popular, and also the most extendable.
+
+* **Many of the biggest companies on the web use** jQuery, such as :
+    * Google
+    * Microsoft
+    * IBM
+    * Netflix
+
+# Adding jQuery to our Web Pages
+There are several ways to start using jQuery on your web site.
+
+* Download the jQuery library from **jQuery.com**
+* Include jQuery from a **CDN (Content Delivery Network)**, like Google
+
+## Downloading jQuery
+There are two versions of jQuery available for downloading
+
+* **Production Version** - This is for our live website because it has been minigied and compressed
+
+* **Develompent version** - This is for testing and development (uncompressed and readable code)
+
+## jQuery CDN (Content Delivery Network)
+If we don't want to download and host jQuery ourself, we can include it from a CDN
+
+* Both Google and Microsoft host jQuery
+* To use jQuery from Google or Microsoft, use one of the following:
+    * Google CDN
+    * <head> <sctipt src="https://ajax.googleapis.com/ajax//libs/jquery/3.4.1/jquery.min.js"> </script></head>
