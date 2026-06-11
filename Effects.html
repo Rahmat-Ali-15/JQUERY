@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        * {
+            cursor: pointer;
+        }
+
+        #box {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Toggle Content</button>
+    <div id="box">
+        <p style="border: 2px solid red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit est harum
+            pariatur quas expedita labore veniam deleniti, eligendi quam ea iste voluptatum cupiditate, voluptates
+            fugiat praesentium eveniet laborum nobis dolorum porro at illum nulla dolore voluptatibus debitis. Vitae,
+            quam quis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi aperiam voluptates qui! Enim nobis vero similique praesentium iure amet, distinctio cumque reprehenderit maiores et natus quae laboriosam hic placeat, ab necessitatibus ex minus. Maiores, tempora recusandae vitae tenetur eaque inventore blanditiis voluptatum qui corporis dolorem atque et tempore deleniti quia doloremque explicabo. Nihil sequi minima, ratione consequuntur quas explicabo ducimus.</p>
+    </div>
+</body>
+<script>
+    // fadeIn and fadeOut
+
+    /* $(function () {
+        $('#box').mouseenter(function () {
+            $('p').fadeOut(1000)
+        });
+        $('#box').mouseleave(function () {
+            $('p').fadeIn(1000)
+        })
+    }) */
+
+    // fadeTo
+
+    /* $(function () {
+        $('#box').mouseenter(function () {
+            $('p').fadeTo(1000, 0)
+        });
+        $('#box').mouseleave(function () {
+            $('p').fadeTo(1000, 1)
+        })
+    }) */
+
+
+    // slideUp and slideDown
+
+    /* $(function () {
+        $('#box').mouseenter(function () {
+            $('p').slideUp(1000)
+        });
+        $('#box').mouseleave(function () {
+            $('p').slideDown(1000)
+        })
+    }) */
+
+
+    // slideToggle
+
+    $(function () {
+        $('#btn').click(function () {
+            $('#box').slideToggle(1000)
+        });
+    })
+
+
+</script>
+
+</html>
