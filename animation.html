@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="box" style="
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background: tomato;
+        left: 0;
+      ">
+    </div>
+
+    <button id="btn" style="position: absolute; left: 100px">click</button>
+</body>
+<script>
+    $(function () {
+        //   $('#box').animate({ left: '500px' }, 2000, 'linear');
+
+        $('#btn').click(function () {
+            $('#box').slideUp().fadeIn(1000).toggle(2000);
+        });
+    });
+</script>
+
+</html>
